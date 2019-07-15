@@ -1,11 +1,3 @@
-Recreating postgres db and volumes using docker-compose.
-from Stackoverflow: https://stackoverflow.com/questions/32612650/how-to-get-docker-compose-to-always-re-create-containers-from-fresh-images
-
-
-docker-compose rm -f
-docker-compose pull
-docker-compose up --build -d
-
 # ADD SQL DATA DUMP TO POSTGRES CONTAINER
 
 cat your_dump.sql | docker exec -i your-db-container psql -U postgres

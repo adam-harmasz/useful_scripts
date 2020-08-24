@@ -1,4 +1,3 @@
 ```
-sudo rmmod btusb
-sudo modprobe btusb
+sudo rmmod btusb && sudo modprobe btusb
 ```
